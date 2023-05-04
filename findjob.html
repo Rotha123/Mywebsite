@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    .ToolBar{
+        z-index: 1000;
+        position: fixed;
+        top: 0px;
+    }
+</style>
+<body>
+    <div class="ToolBar">
+        <div class="wholebar">
+            <div class="subBar">
+                <a href="index.html"><img src="logo.webp" alt="" style="width: 260px;"></a>
+                <p ><a href="#" class="sub">Recruit Talent</a></p>
+                <p ><a href="#" class="sub" id="f">Find Jobs</a></p>
+                <p ><a href="#" class="sub">Our Service</a></p>
+                <p ><a href="#" class="sub">Why Us?</a></p> 
+            </div>
+                <div class="rightBar">
+                    <p><a href="#" class="subright">Login</a></p>
+                    <a href="#" class="subright" class="subrights"><span class="sign">Sign Up</span></a>
+                </div>
+            </div>  
+    </div>
+    <div class="new">
+        <div class="topb">
+            <div><a href="#">Jobs You might like</a></div>
+            <div><a href="#">Applied Jobs</a></div>
+            <div><a href="#">My Favorite Jobs</a></div>    
+        </div>
+    </div>
+    <div class="pa">
+        <div>
+            <p>Find Jobs</p>
+        </div>
+        <div>
+            <p class="w">With WORKINGNA is the only site you'll need to find your next job.</p>
+        </div>    
+    </div>
+    <div class="in">
+        <div class="b-w">
+            <select name="" id="" >
+                <option value="" disabled selected>Location...</option>
+                <option value="">Kandal</option>
+                <option value="">Kompong Cham</option>
+                <option value="">Siem Reap</option>
+                <option value="">Siehak Nuk</option>
+                <option value="">Toul Kork</option>
+            </select>
+            <div class="s">
+                <i class="fa fa-search" aria-hidden="true"></i>            
+                <input style="border: none;" type="text" placeholder="Search by jobs or companies">    
+            </div>
+            <button>Search Jobs</button>
+        </div>
+    </div>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="account.webp" style="width: 100%;">
+        <img class="mySlides" src="Digital-marketing.webp" style="width: 100%;">
+        <img class="mySlides" src="Restaurant-Manager.webp" style="width: 100%;">
+        <img class="mySlides" src="Saleoutdoor.webp"style="width: 100%;">
+        <img class="mySlides" src="interior.webp" style="width: 100%;">
+        <img class="mySlides" src="Mobileapp.webp" style="width: 100%;">
+        <img class="mySlides" src="Network.webp" style="width: 100%;">
+        <img class="mySlides" src="Product-Manager.webp" style="width: 100%;">
+        <img class="mySlides" src="Sale.webp"style="width: 100%;">
+        <img class="mySlides" src="tax.webp"style="width: 100%;">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+          var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+</body>
+</html>
